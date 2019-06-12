@@ -1,0 +1,46 @@
+<div class="panel-header panel-header-sm">
+</div>
+
+
+  <div class="main-content">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title"> Items</h4>
+        <button (click)="redirectToItemsAdd() " class="btn btn-primary pull-right">Add Item</button>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead class=" text-primary">
+              <th>
+                Items Name
+              </th>
+              <th>
+                Price
+              </th>
+              <th>
+                Action
+              </th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let json of items">
+                <td>
+                  {{json.itemName}}
+                </td>
+                <td>
+                  {{json.price}}
+                </td>
+                <td>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    Add ingredients
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+   
+  </div>  

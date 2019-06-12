@@ -1,0 +1,39 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="title"> Add Item</h5>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-md-5 pr-1">
+                <div class="form-group">
+                  <label>Item Name</label>
+                  <input type="text" class="form-control" placeholder="Item name" [(ngModel)]="itemName" name="itemName">
+                </div>
+              </div>
+              <div class="col-md-3 px-1">
+                <div class="form-group">
+                  <label>Price</label>
+                  <input type="text" class="form-control" placeholder="Price" [(ngModel)]="price" name="price">
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+              <button (click)="save()" class="btn btn-info">Save</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
